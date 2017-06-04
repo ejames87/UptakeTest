@@ -30,9 +30,6 @@ class UptakeHome(BasePage):
 
     def click_contact(self):
         """Triggers navigation to Contact page"""
-        # I tried to add another layer of Page Objects here, but I also really
-        # wanted to use XPATHing and couldn't get it isolate the XPATH locator
-        # in a dedicated file.
         element = self.driver.find_element_by_xpath("/html/body/div[1]/div/button")
         element.click()
 
